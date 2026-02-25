@@ -1,0 +1,47 @@
+{
+  "kind": "build_request",
+  "title": "Update color theme to clean white and light blue (Furaat logo palette)",
+  "projectName": "Furaat Trading",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Replace the existing warm gold/cream/charcoal color palette with a clean white and light blue theme inspired by the Furaat logo. Update all CSS custom properties, Tailwind color tokens, and component-level color classes across the entire site (Header, Hero, ServicesSection, ServiceCard, AboutSection, ContactSection, ContactForm, Footer) so that primary backgrounds use clean white, accent and interactive elements use light blue, and text uses dark navy or charcoal for readability. Remove gold accent classes (gold-text, arabesque-bg, etc.) and replace with light-blue equivalents.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "colour clean white and light blue as per furaat logo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The site-wide primary background is clean white (#FFFFFF or equivalent).",
+        "The primary accent/brand color is a light blue consistent with the Furaat logo.",
+        "All buttons, links, highlights, and decorative accents use the light blue palette instead of gold.",
+        "Text remains legible (dark navy or charcoal) against the white background.",
+        "The Header, Hero, ServicesSection, AboutSection, ContactSection, and Footer all reflect the updated palette consistently.",
+        "No gold, cream, or dark charcoal background surfaces remain unless they are part of a neutral dark text color.",
+        "Tailwind config color tokens (brand, accent) are updated to reflect the new white and light blue palette.",
+        "CSS custom properties in frontend/src/index.css are updated to the new palette.",
+        "The overall design still appears professional and coherent across all sections."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files under frontend/src/hooks/ or frontend/src/components/ui/ (immutable paths).",
+    "Do not alter backend logic or data models.",
+    "Preserve all existing layout structure and component composition — only colors and related decorative styles should change."
+  ],
+  "nonGoals": [
+    "Adding new sections or features.",
+    "Changing typography choices (font families).",
+    "Modifying backend contact form storage logic.",
+    "Redesigning layout or component structure."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

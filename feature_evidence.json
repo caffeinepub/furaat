@@ -1,0 +1,32 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-replace-the-existing-warm-gold-cream-charcoal-color-palette-with-a-clean-white-and-light-blue-theme-inspired-by-the-furaat-logo-update-all-css-custom-properties-tailwind-color-tokens-and-component-level-color-classes-across-the-entire-site-header-hero-servicessection-servicecard-aboutsection-contactsection-contactform-footer-so-that-primary-backgrounds-use-clean-white-accent-and-interactive-elements-use-light-blue-and-text-uses-dark-navy-or-charcoal-for-readability-remove-gold-accent-classes-gold-text-arabesque-bg-etc-and-replace-with-light-blue-equivalents",
+      "featureTitle": "Replace the existing warm gold/cream/charcoal color palette with a clean white and light blue theme inspired by the Furaat logo. Update all CSS custom properties, Tailwind color tokens, and component-level color classes across the entire site (Header, Hero, ServicesSection, ServiceCard, AboutSection, ContactSection, ContactForm, Footer) so that primary backgrounds use clean white, accent and interactive elements use light blue, and text uses dark navy or charcoal for readability. Remove gold accent classes (gold-text, arabesque-bg, etc.) and replace with light-blue equivalents.",
+      "files": [
+        "frontend/src/components/AboutSection.tsx",
+        "frontend/src/components/ContactForm.tsx",
+        "frontend/src/components/ContactSection.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx",
+        "frontend/src/components/Hero.tsx",
+        "frontend/src/components/ServiceCard.tsx",
+        "frontend/src/components/ServicesSection.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update color theme to clean white and light blue (Furaat logo palette)",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Replace warm gold/cream/charcoal palette with clean white and light blue theme inspired by Furaat logo across all components and global styles",
+      "acceptanceCriteria": [
+        "The site-wide primary background is clean white (#FFFFFF or equivalent).",
+        "The primary accent/brand color is a light blue consistent with the Furaat logo.",
+        "All buttons, links, highlights, and decorative accents use the light blue palette instead of gold.",
+        "Text remains legible (dark navy or charcoal) against the white background.",
+        "The Header, Hero, ServicesSection, AboutSection, ContactSection, and Footer all reflect the updated palette consistently.",
+        "No gold, cream, or dark charcoal background surfaces remain unless they are part of a neutral dark text color.",
+        "Tailwind config color tokens (brand, accent) are updated to reflect the new white and light blue palette.",
+        "CSS custom properties in frontend/src/index.css are updated to the new palette.",
+        "The overall design still appears professional and coherent across all sections."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update CSS custom properties to replace the warm gold/cream/charcoal palette with clean white and light blue theme. Replace --color-gold, --color-cream, --color-charcoal variables with --color-light-blue (primary accent), --color-white (primary background), and --color-navy (text) using appropriate OKLCH values. Update utility classes like gold-text to light-blue-text and arabesque-bg to use light blue tones. Ensure both light and dark mode variables are updated consistently."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Update the extended theme color tokens to replace gold, charcoal, and cream with light-blue (primary brand/accent color using OKLCH), white (primary background), and navy/charcoal (text colors). Ensure the brand color uses the light blue palette values that match the Furaat logo aesthetic. Preserve all other theme extensions (fonts, shadows, animations) unchanged."
+        },
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Replace all gold accent classes and background colors with light blue equivalents. Update the top info bar background from cream/gold to white or light blue. Change text colors to dark navy for readability against white backgrounds. Update hover states and active link styling to use light blue instead of gold. Ensure the 'Get in Touch' CTA button uses light blue as the primary color."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Update the hero section to use clean white text overlays and light blue accent elements. Replace any gold/cream gradient or accent colors in buttons and stats display with light blue. Ensure CTA buttons use light blue as primary color. Maintain readability by using appropriate overlay opacity and dark navy text where needed against the background image at frontend/public/assets/generated/hero-banner.dim_1440x600.png."
+        },
+        {
+          "path": "frontend/src/components/ServicesSection.tsx",
+          "operation": "modify",
+          "description": "Replace cream/charcoal backgrounds with clean white background. Update section header text and decorative elements to use light blue accents instead of gold. Ensure the overall section background is white and maintains professional appearance."
+        },
+        {
+          "path": "frontend/src/components/ServiceCard.tsx",
+          "operation": "modify",
+          "description": "Replace gold accent styling (text, borders, hover effects) with light blue equivalents. Update card backgrounds to white or very light blue tones. Change the 'Learn More' button and icon colors from gold to light blue. Ensure hover animations use light blue instead of gold while maintaining visual appeal."
+        },
+        {
+          "path": "frontend/src/components/AboutSection.tsx",
+          "operation": "modify",
+          "description": "Replace the dark charcoal background with clean white. Remove gold decorative accents from mission/vision cards and the four-value grid (Integrity, Excellence, Partnership, Global Reach), replacing them with light blue accents. Update card backgrounds to white or light blue tones. Ensure text uses dark navy or charcoal for readability against the white background."
+        },
+        {
+          "path": "frontend/src/components/ContactSection.tsx",
+          "operation": "modify",
+          "description": "Replace the dark panel background with white or light blue. Update the cream card containing ContactForm to use white background. Change gold accent colors in contact details (address, phone, email, hours) to light blue. Ensure text contrast remains strong with dark navy text on white backgrounds."
+        },
+        {
+          "path": "frontend/src/components/ContactForm.tsx",
+          "operation": "modify",
+          "description": "Update form field borders, focus states, and the submit button to use light blue instead of gold. Replace any gold accent colors in validation states or success messages with light blue. Ensure form fields have clean white backgrounds with light blue focus highlights."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Replace gold accent colors in links, social media icons, and decorative elements with light blue. Update background from charcoal/cream to white or light blue tone. Change text to dark navy for readability. Ensure hover states on links and icons use light blue. Update the copyright bar styling to match the clean white and light blue palette."
+        }
+      ]
+    }
+  ]
+}

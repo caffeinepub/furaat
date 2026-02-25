@@ -1,0 +1,15 @@
+{
+  "frontend/src/index.css": "Global styles updated to clean white and light blue OKLCH palette, replacing all gold/cream/charcoal tokens with brand blue (oklch 0.58 0.14 230), navy, and white. Utility classes renamed from gold-* to blue-* variants, with matching button, nav, and pattern styles.",
+  "frontend/tailwind.config.js": "Tailwind config updated to replace gold/charcoal/cream color tokens with brand (light blue), navy, and offwhite tokens using OKLCH values. Shadow tokens updated from gold to blue variants.",
+  "frontend/src/hooks/useQueries.ts": "React Query mutation hook for submitting contact form data to the backend via the submitContactForm actor method.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header updated to white background with light blue top bar, blue CTA button, and navy text. Mobile menu uses white background with blue hover states.",
+  "frontend/src/components/Hero.tsx": "Hero section updated with navy-dark overlay, light blue accent elements, blue-gradient headline text, and white/blue CTA buttons. Stats row uses brand-light color.",
+  "frontend/src/components/ServiceCard.tsx": "Service cards updated to white background with light blue icon containers, blue hover accent line, blue \"Learn More\" outline button, and navy title text.",
+  "frontend/src/components/ServicesSection.tsx": "Services section updated to white background with light blue section header accents and blue ornament lines instead of gold.",
+  "frontend/src/components/AboutSection.tsx": "About section updated from dark charcoal to light off-white background. Mission/vision cards use white with blue left border accent. Values grid uses white cards with blue icon circles and blue hover effects.",
+  "frontend/src/components/ContactForm.tsx": "Contact form updated with navy labels, white input backgrounds with blue focus states, blue submit button, and blue success state icon.",
+  "frontend/src/components/ContactSection.tsx": "Contact section updated to white background. Contact details panel uses solid brand-blue background with white text. Form card uses white with blue top accent line.",
+  "frontend/src/components/Footer.tsx": "Footer updated from dark charcoal to navy-dark background with light blue accent line, blue social icon borders, blue link hover states, and brand-light contact icons.",
+  "frontend/src/pages/Home.tsx": "Home page that composes Header, Hero, ServicesSection, AboutSection, ContactSection, and Footer into a single-page layout.",
+  "frontend/src/App.tsx": "Root application component that renders the Home page as the default view."
+}

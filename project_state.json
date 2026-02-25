@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build a new website inspired by/related to Rajoo (rajoo.com) and Furaat (furaat.com) — combining or drawing from both sites. Visual theme updated to clean white and light blue as per the Furaat logo.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-homepage-with-a-hero-section-featuring-a-prominent-banner-headline-and-call-to-action-button-include-a-navigation-bar-with-logo-main-menu-links-home-about-services-products-contact-and-a-language-toggle-add-a-footer-with-contact-info-quick-links-and-social-media-icons",
+      "title": "Create a homepage with a hero section featuring a prominent banner, headline, and call-to-action button. Include a navigation bar with logo, main menu links (Home, About, Services, Products, Contact), and a language toggle. Add a footer with contact info, quick links, and social media icons.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-products-section-on-the-homepage-showcasing-offerings-in-a-card-grid-layout-each-card-should-have-an-icon-title-and-short-description-include-a-learn-more-button-on-each-card",
+      "title": "Create a Services/Products section on the homepage showcasing offerings in a card grid layout. Each card should have an icon, title, and short description. Include a 'Learn More' button on each card.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-us-section-describing-the-company-s-mission-vision-and-values-include-a-short-paragraph-of-placeholder-text-and-a-team-or-company-highlight-area",
+      "title": "Create an About Us section describing the company's mission, vision, and values. Include a short paragraph of placeholder text and a team or company highlight area.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-contact-us-section-with-a-contact-form-name-email-message-fields-and-a-submit-button-and-display-placeholder-company-contact-details-address-phone-email-store-submitted-contact-form-entries-in-the-backend",
+      "title": "Create a Contact Us section with a contact form (Name, Email, Message fields and a Submit button) and display placeholder company contact details (address, phone, email). Store submitted contact form entries in the backend.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-warm-professional-visual-theme-inspired-by-middle-eastern-trading-supply-companies-use-a-rich-color-palette-of-deep-gold-warm-cream-off-white-and-dark-charcoal-use-bold-serif-or-semi-serif-typography-for-headings-and-clean-sans-serif-for-body-text-apply-subtle-geometric-or-arabesque-inspired-decorative-accents-ensure-the-design-is-consistent-across-all-sections",
+      "title": "Implement a warm, professional visual theme inspired by Middle Eastern trading/supply companies. Use a rich color palette of deep gold, warm cream/off-white, and dark charcoal. Use bold serif or semi-serif typography for headings and clean sans-serif for body text. Apply subtle geometric or arabesque-inspired decorative accents. Ensure the design is consistent across all sections.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-existing-warm-gold-cream-charcoal-color-palette-with-a-clean-white-and-light-blue-theme-inspired-by-the-furaat-logo-update-all-css-custom-properties-tailwind-color-tokens-and-component-level-color-classes-across-the-entire-site-header-hero-servicessection-servicecard-aboutsection-contactsection-contactform-footer-so-that-primary-backgrounds-use-clean-white-accent-and-interactive-elements-use-light-blue-and-text-uses-dark-navy-or-charcoal-for-readability-remove-gold-accent-classes-gold-text-arabesque-bg-etc-and-replace-with-light-blue-equivalents",
+      "title": "Replace the existing warm gold/cream/charcoal color palette with a clean white and light blue theme inspired by the Furaat logo. Update all CSS custom properties, Tailwind color tokens, and component-level color classes across the entire site (Header, Hero, ServicesSection, ServiceCard, AboutSection, ContactSection, ContactForm, Footer) so that primary backgrounds use clean white, accent and interactive elements use light blue, and text uses dark navy or charcoal for readability. Remove gold accent classes (gold-text, arabesque-bg, etc.) and replace with light-blue equivalents.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a new website inspired by rajoo.com and furaat.com",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Update color theme to clean white and light blue as per Furaat logo",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Furaat",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

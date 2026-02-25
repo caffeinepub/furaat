@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.375rem;
+
+    /* Clean white & light blue palette - light mode */
+    --background: 1 0 0;
+    --foreground: 0.18 0.04 240;
+
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.04 240;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.04 240;
+
+    /* Light blue primary */
+    --primary: 0.58 0.14 230;
+    --primary-foreground: 1 0 0;
+
+    --secondary: 0.94 0.04 220;
+    --secondary-foreground: 0.22 0.05 240;
+
+    --muted: 0.95 0.03 220;
+    --muted-foreground: 0.50 0.04 230;
+
+    --accent: 0.90 0.06 220;
+    --accent-foreground: 0.22 0.05 240;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.05 220;
+    --input: 0.88 0.05 220;
+    --ring: 0.58 0.14 230;
+
+    --chart-1: 0.58 0.14 230;
+    --chart-2: 0.50 0.12 200;
+    --chart-3: 0.40 0.10 250;
+    --chart-4: 0.70 0.10 210;
+    --chart-5: 0.65 0.12 220;
+
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+
+    /* Custom tokens - light blue palette */
+    --blue: 0.58 0.14 230;
+    --blue-dark: 0.44 0.14 235;
+    --blue-light: 0.90 0.06 220;
+    --blue-muted: 0.75 0.08 225;
+    --navy: 0.18 0.06 240;
+    --navy-dark: 0.12 0.05 245;
+    --white: 1 0 0;
+    --off-white: 0.97 0.01 220;
+  }
+
+  .dark {
+    --background: 0.14 0.04 240;
+    --foreground: 0.95 0.02 220;
+
+    --card: 0.18 0.04 240;
+    --card-foreground: 0.95 0.02 220;
+
+    --popover: 0.18 0.04 240;
+    --popover-foreground: 0.95 0.02 220;
+
+    --primary: 0.65 0.14 230;
+    --primary-foreground: 0.12 0.04 240;
+
+    --secondary: 0.22 0.05 240;
+    --secondary-foreground: 0.95 0.02 220;
+
+    --muted: 0.22 0.05 240;
+    --muted-foreground: 0.65 0.04 230;
+
+    --accent: 0.28 0.06 240;
+    --accent-foreground: 0.95 0.02 220;
+
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.205 0 0;
+
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.65 0.14 230;
+
+    --chart-1: 0.65 0.14 230;
+    --chart-2: 0.55 0.12 200;
+    --chart-3: 0.45 0.10 250;
+    --chart-4: 0.72 0.10 210;
+    --chart-5: 0.60 0.12 220;
+
+    --sidebar: 0.205 0 0;
+    --sidebar-foreground: 0.985 0 0;
+    --sidebar-primary: 0.65 0.14 230;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.269 0 0;
+    --sidebar-accent-foreground: 0.985 0 0;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.439 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+@layer components {
+  .section-divider {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, oklch(0.58 0.14 230), transparent);
+  }
+
+  .blue-text {
+    color: oklch(0.58 0.14 230);
+  }
+
+  .blue-gradient-text {
+    background: linear-gradient(135deg, oklch(0.58 0.14 230), oklch(0.44 0.14 235));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .arabesque-bg {
+    background-image: 
+      radial-gradient(circle at 20% 50%, oklch(0.58 0.14 230 / 0.04) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, oklch(0.58 0.14 230 / 0.04) 0%, transparent 50%);
+  }
+
+  .geometric-pattern {
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        oklch(0.58 0.14 230 / 0.04) 0px,
+        oklch(0.58 0.14 230 / 0.04) 1px,
+        transparent 1px,
+        transparent 12px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        oklch(0.58 0.14 230 / 0.04) 0px,
+        oklch(0.58 0.14 230 / 0.04) 1px,
+        transparent 1px,
+        transparent 12px
+      );
+  }
+
+  .btn-blue {
+    background: linear-gradient(135deg, oklch(0.58 0.14 230), oklch(0.44 0.14 235));
+    color: oklch(1 0 0);
+    border: none;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .btn-blue:hover {
+    background: linear-gradient(135deg, oklch(0.62 0.15 230), oklch(0.50 0.15 235));
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px oklch(0.58 0.14 230 / 0.35);
+  }
+
+  .btn-outline-blue {
+    background: transparent;
+    color: oklch(0.58 0.14 230);
+    border: 1.5px solid oklch(0.58 0.14 230);
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .btn-outline-blue:hover {
+    background: oklch(0.58 0.14 230);
+    color: oklch(1 0 0);
+    transform: translateY(-1px);
+  }
+
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px oklch(0.18 0.04 240 / 0.12);
+  }
+
+  .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: oklch(0.28 0.05 240);
+    transition: color 0.2s ease;
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: oklch(0.58 0.14 230);
+    transition: width 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: oklch(0.58 0.14 230);
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .section-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .ornament {
+    display: inline-block;
+    color: oklch(0.58 0.14 230);
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0 0.5rem;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: oklch(0.94 0.04 220);
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.58 0.14 230);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.44 0.14 235);
+}
